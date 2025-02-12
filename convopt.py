@@ -7,16 +7,15 @@ import pillow_heif  # ✅ Import HEIC support
 app = Flask(__name__, static_folder="static", template_folder="templates")
 
 @app.after_request
-def set_security_headers(response):
-    response.headers["Content-Security-Policy"] = """
-        default-src 'self'; 
-        script-src 'self' https://cdnjs.cloudflare.com; 
-        style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; 
-        img-src 'self' data:; 
-        connect-src 'self'; 
-        frame-ancestors 'none';
-    """
-
+def set_security_headers(response: Response):  # Explicitly define Response type
+    response.headers["Content-Security-Policy"] = (
+        "default-src 'self'; "
+        "script-src 'self' https://cdnjs.cloudflare.com; "
+        "style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; "
+        "img-src 'self' data:; "
+        "connect-src 'self'; "
+        "frame-ancestors 'none';"
+    ).strip()
     return response
 
 @app.route("/")
