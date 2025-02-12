@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoaCompress - Optimiza imágenes online gratis</title>
+    <meta name="description" content="Convierte y comprime tus imágenes JPEG, PNG, HEIC y más a WebP. Reduce el tamaño sin perder calidad y mejora la velocidad de tu sitio web.">
+    <meta name="keywords" content="optimización de imágenes, convertir a WebP, comprimir imágenes online">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+    <section>
+        <header>
+            <div class="logo-container">
+                <img src="static/boa-compress.webp" alt="BoaCompress Logo">
+            </div>
+            <h1>Optimiza imágenes gratis en segundos</h1>
+            <p>Convierte y comprime imágenes de manera inteligente sin perder calidad. Usa BoaCompress para reducir el peso de tus archivos y mejorar la velocidad de tu sitio web, garantizando una experiencia rápida y optimizada.</p>
+        </header>
+
+        <div id="drop-area">
+            <p>Arrastra y suelta imágenes aquí</p>
+            <input type="file" id="upload" accept="image/*" multiple hidden>
+            <button id="select-file">Seleccionar archivos</button>
+        </div>
+
+        <div class="button-group">
+            <button id="convert">Optimizar</button>
+            <a id="download-all" class="download-btn" style="display:none">Descargar todas</a>
+        </div>
+
+        <div id="results-container" style="display: none;">
+            <h2 id="processing-text" style="display: none;">Procesando imágenes...</h2>
+        </div>
+    </section>
+
+     <section>
+        <h2>¿Por qué es importante optimizar imágenes?</h2>
+        <p>
+        Las imágenes no optimizadas pueden ralentizar tu sitio web, afectando la experiencia del usuario
+        y el posicionamiento en Google. Un estudio de <strong>Google PageSpeed Insights</strong>
+        revela que un retraso de solo <strong>1 segundo</strong> en la carga de una página puede reducir
+        las conversiones en un <strong>20%</strong>. Al comprimir tus imágenes, reduces el tiempo de carga,
+        ahorras ancho de banda y mejoras el SEO.
+        </p>
+
+        <p><strong>✅ Mejora el rendimiento web:</strong> Páginas más rápidas significan mayor retención de usuarios.</p>
+        <p><strong>✅ SEO más fuerte:</strong> Google favorece sitios con tiempos de carga óptimos.</p>
+        <p><strong>✅ Menos consumo de datos:</strong> Reduce el peso de las imágenes hasta un <strong>80%</strong> sin pérdida de calidad.</p>
+     </section>
+
+    <section>
+        <h2>¿Cómo funciona nuestra tecnología de optimización?</h2>
+        <p>
+            BoaCompress utiliza <strong>algoritmos avanzados de compresión y conversión</strong>
+            para reducir el tamaño de imágenes sin comprometer su calidad.
+            Nuestro sistema convierte formatos como <strong>JPEG, PNG, HEIC y TIFF</strong>
+            a <strong>WebP</strong>, el formato optimizado por Google, logrando una compresión eficiente sin pérdida visual.
+        </p>
+        <p>
+            La compresión inteligente de BoaCompress analiza los patrones de color y textura en cada imagen
+            para determinar el mejor nivel de compresión sin distorsión. En pruebas de rendimiento,
+            nuestras conversiones a WebP han reducido el peso de archivos hasta un <strong>80%</strong>
+            en comparación con JPEG y PNG estándar.
+        </p>
+
+        <h3>📌 Paso a paso:</h3>
+            <p><strong>Sube tu imagen</strong> en cualquier formato compatible.</p>
+            <p><strong>BoaCompress la optimiza</strong> automáticamente con la mejor calidad.</p>
+            <p><strong>Descarga tu imagen optimizada</strong> y úsala en tu web o redes sociales.</p>
+    </section>
+
+    <section>
+        <h2>Preguntas Frecuentes</h2>
+
+        <h3>📌 ¿Cómo mejora WebP el rendimiento de mi sitio?</h3>
+        <p>
+            WebP es un formato desarrollado por Google que puede reducir el tamaño de las imágenes
+            hasta en un <strong>35%</strong> en comparación con JPEG sin pérdida de calidad.
+            Al utilizar imágenes más livianas, las páginas cargan más rápido, lo que mejora
+            la experiencia del usuario y el posicionamiento en motores de búsqueda.
+        </p>
+
+        <h3>📌 ¿Cuánto puedo reducir el tamaño de mis imágenes?</h3>
+        <p>
+            BoaCompress permite reducir el peso de una imagen en hasta <strong>80%</strong>
+            dependiendo del formato original y la calidad seleccionada.
+            Esto ayuda a acelerar la carga de sitios web y reducir el consumo de ancho de banda.
+        </p>
+
+        <h3>📌 ¿El formato WebP es compatible con todos los navegadores?</h3>
+        <p>
+            Sí. WebP es compatible con <strong>Chrome, Firefox, Edge y Opera</strong>.
+            Safari también lo admite en sus versiones más recientes. Si necesitas compatibilidad
+            con navegadores antiguos, puedes mantener una versión alternativa en PNG o JPEG.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2025 BoaCompress - Optimización de Imágenes</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</body>
+</html>
