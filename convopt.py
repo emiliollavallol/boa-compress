@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, send_file, Response
+from flask import Flask, render_template, request, send_file, Response, send_from_directory
 from PIL import Image
 import io
 import os
@@ -17,6 +17,16 @@ def set_security_headers(response: Response):  # Explicitly define Response type
         "frame-ancestors 'none';"
     ).strip()
     return response
+
+# Serve robots.txt
+@app.route("/robots.txt")
+def robots():
+    return send_from_directory("static", "robots.txt")
+
+# Serve sitemap.xml
+@app.route("/sitemap.xml")
+def sitemap():
+    return send_from_directory("static", "sitemap.xml")
 
 @app.route("/")
 def index():
