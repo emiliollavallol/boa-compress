@@ -4,59 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9892acfe-17f2-4591-a13a-5f5c44efaf44" name="Changes" comment="10 commit">
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/analyzer/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/analyzer/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/templates/blog_index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/templates/blog_post_que-es-webp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/templates/blog_post_seo-para-ecommerce.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/compressor/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/compressor/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/contacto/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/contacto/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/analyzer.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/blog/beneficios-del-webp.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/blog/herramienta-boa-compress.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/blog/que-es-el-webp.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/blog/seo-ecommerce.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/blog/sostenibilidad-digital.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/blog/texto-alt.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/boa-compress.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/compresor.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/instagram-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/placeholder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/search.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/sitemap.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/styles-blog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/styles-home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/treadmill.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/treadmill.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/weights.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/analizador.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/contacto.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/contacto_error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/contacto_exito.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/conversor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/v1/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/v1/static/favicon.ico" afterDir="false" />
+    <list default="true" id="9892acfe-17f2-4591-a13a-5f5c44efaf44" name="Changes" comment="v2.0 commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convopt.py" beforeDir="false" afterPath="$PROJECT_DIR$/v1/convopt.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/boa-compress.webp" beforeDir="false" afterPath="$PROJECT_DIR$/v1/static/boa-compress.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/v1/static/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1/static/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/v1/static/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/v1/static/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/v1/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739388257272</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="v2.0 commit">
+      <option name="closed" value="true" />
+      <created>1743509763948</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1743509763948</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -291,7 +249,8 @@
     <MESSAGE value="8 commit" />
     <MESSAGE value="9 commit" />
     <MESSAGE value="10 commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="10 commit" />
+    <MESSAGE value="v2.0 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2.0 commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
