@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boa Compress | Blog </title>
+    <meta name="description" content="¿Tu sitio está gordito? Usa Boa Compress para analizar el peso de tu web y comprimir imágenes fácilmente. Mejora el SEO y la velocidad con nuestras herramientas gratuitas.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles-blog.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="canonical" href="https://boacompress.com/blog" />
+</head>
+
+<section class="blog-index">
+  <h1>Nuestro Blog</h1>
+  <div class="posts">
+    {% for post in posts %}
+      <div class="post-preview">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.date }}</p>
+        <p>{{ post.excerpt }}</p>
+        <p>Autor: {{ post.author }}</p>
+        <a href="/blog/{{ post.slug }}">Leer más →</a>
+      </div>
+    {% endfor %}
+  </div>
+  <a href="/">← Vuelve al sitio principal </a>
+</section>
+
+</html>

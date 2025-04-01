@@ -1,38 +1,16 @@
-from flask import Flask, render_template, request, send_file, Response, send_from_directory
+from flask import render_template, request, send_file, Blueprint
 from PIL import Image
 import io
 import os
 import pillow_heif  # ✅ Import HEIC support
 
-app = Flask(__name__, static_folder="static", template_folder="templates")
+compressor_bp = Blueprint('compressor', __name__)
 
-@app.after_request
-def set_security_headers(response: Response):  # Explicitly define Response type
-    response.headers["Content-Security-Policy"] = (
-        "default-src 'self'; "
-        "script-src 'self' https://cdnjs.cloudflare.com; "
-        "style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; "
-        "img-src 'self' data:; "
-        "connect-src 'self'; "
-        "frame-ancestors 'none';"
-    ).strip()
-    return response
-
-# Serve robots.txt
-@app.route("/robots.txt")
-def robots():
-    return send_from_directory("static", "robots.txt")
-
-# Serve sitemap.xml
-@app.route("/sitemap.xml")
-def sitemap():
-    return send_from_directory("static", "sitemap.xml")
-
-@app.route("/")
+@compressor_bp.route('/')
 def index():
-    return render_template("index.html")
+    return render_template("conversor.html")
 
-@app.route("/convert", methods=["POST"])
+@compressor_bp.route("/convert", methods=["POST"])
 def convert_image():
     if "image" not in request.files:
         return "No file uploaded", 400
@@ -62,6 +40,3 @@ def convert_image():
 
     except Exception as e:
         return f"Error processing image: {str(e)}", 500
-
-if __name__ == "__main__":
-    app.run(debug=True)

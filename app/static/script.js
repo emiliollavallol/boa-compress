@@ -75,7 +75,7 @@ document.getElementById("convert").addEventListener("click", async function () {
         formData.append("image", file);
 
         try {
-            const response = await fetch("/convert", {
+            const response = await fetch("/comprimir/convert", {
                 method: "POST",
                 body: formData,
             });

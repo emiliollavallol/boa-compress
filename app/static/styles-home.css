@@ -1,0 +1,962 @@
+/* Reseteo y box-sizing */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: Roboto, sans-serif;
+background-color: #fff;
+color: #333;
+line-height: 1.5;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Contenedor principal para limitar el ancho */
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 1rem;
+}
+
+/* Encabezado */
+header {
+border-bottom: 1px solid #eee;
+background-color: #fff;
+}
+
+.header-content {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.logo img {
+height: 50px; /* Ajusta según tu logo */
+}
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 1rem;
+}
+
+nav a {
+font-weight: bold;
+color: #333;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    color: #06a4d5;
+  }
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  .main-nav.open {
+    display: block;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-right {
+    display: none; /* ocultamos Instagram y Blog en mobile si querés simplificar */
+  }
+}
+
+/* Sección derecha del header: Instagram + Blog */
+.header-right {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.header-right img {
+height: 24px;
+width: 24px;
+}
+
+.social-links {
+align-items: center;
+padding: 4px;
+height: 30px;
+width: 40px;
+}
+
+.btn-blog {
+background-color: #06A4D5;
+color: #fff;
+padding: 8px 20px;
+border-radius: 15px;
+font-weight: 500;
+}
+
+.btn-blog hover{
+ background-color: #067294;
+}
+
+/* Hero (Sección principal) */
+.hero {
+display: flex;
+flex-wrap: wrap; /* Para que se adapte en pantallas pequeñas */
+align-items: center;
+padding: 2rem 0;
+gap: 2rem;
+}
+
+.hero-text {
+flex: 1 1 300px;
+}
+
+.hero-text h1 {
+font-size: 46px;
+margin-bottom: 1rem;
+color: #333;
+}
+
+.hero-text p {
+margin-bottom: 1.5rem;
+font-weight: medium;
+font-size: 24px;
+}
+
+.hero-buttons {
+display: flex;
+gap: 15px;
+}
+
+.btn {
+padding: 10px 20px;
+border-radius: 15px;
+font-weight: 500;
+cursor: pointer;
+display: inline-block;
+}
+
+.btn-primary {
+background-color: #06A4D5;
+color: white;
+border: none;
+}
+
+.btn-outline {
+border: 1px solid #06A4D5;
+color: #00b4d8;
+background-color: transparent;
+}
+
+.hero-image {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sección ¿Cómo funciona? */
+.como-funciona {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.como-funciona {
+    margin-bottom: 40px;
+}
+
+.como-funciona h2 {
+  font-size: 2rem;
+  color: #06a4d5;
+  margin-bottom: 1rem;
+}
+
+.gif-placeholder {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  margin-left: 0%;
+  max-width: 100%; /* Ajustá según el tamaño deseado */
+  height: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.gif-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+
+.gif-img.visible {
+  display: block;
+}
+
+.tool-buttons {
+ display: flex;
+ justify-content: center;
+ gap: 15px;
+ margin-top: 30px;
+}
+
+.tool-btn {
+ display: flex;
+ align-items: center;
+ padding: 8px 15px;
+ border: 1px solid #ddd;
+ border-radius: 5px;
+ background-color: white;
+ cursor: pointer;
+ transition: all 0.2s ease;
+}
+
+.tool-btn:hover {
+  background-color: #06a4d5;
+  color: white;
+}
+
+.tool-btn.active {
+  background-color: #06a4d5;
+  color: white;
+}
+
+/* Sección ¿Por qué usar nuestro compresor? */
+.por-que-usar {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: flex-start;
+ gap: 2rem;
+ padding: 2rem 0;
+}
+
+.por-que-usar .left-column,
+.por-que-usar .right-column {
+ flex: 1 1 300px;
+}
+
+.por-que-usar h2 {
+  font-size: 2rem;
+  color: #06a4d5;
+  margin-bottom: 8rem;
+}
+
+.left-column ul {
+ list-style: disc;
+ margin: 1rem 0;
+ padding-left: 1.5rem;
+}
+
+.left-column ul li {
+ margin-bottom: 1rem;
+}
+
+.left-column .btn {
+ display: inline-block;
+ margin-top: 1rem;
+ background-color: #00bcd4;
+ color: #fff;
+ padding: 0.75rem 1.25rem;
+ border-radius: 4px;
+ font-weight: 600;
+}
+
+.right-column .placeholder-img {
+ max-width: 100%;
+ border: 1px solid #ccc;
+ background-color: #f2f2f2;
+ height: auto;
+}
+
+.try-link {
+ display: flex;
+ align-items: center;
+ color: #06A4D5;
+ font-weight: 500;
+ margin-top: 30px;
+}
+
+.try-link i {
+ margin-left: 5px;
+}
+
+/* Sección Analyzer */
+.analyzer {
+  padding: 4rem 0;
+  background-color: #fff;;
+}
+
+.analyzer .container {
+  display: flex;
+  /* Permite que la imagen y el texto se pongan uno al lado del otro */
+  flex-wrap: wrap;
+  /* Centra verticalmente el contenido de cada columna */
+  align-items: flex-start;
+  /* Espacio entre columnas */
+  gap: 4rem;
+  /* Puedes usar 'justify-content: center;' si quieres
+     que ambos (imagen y texto) queden centrados en la página */
+  justify-content: space-between;
+}
+
+.analyzer-image {
+  flex: 1 1 45%;
+}
+
+.image-placeholder {
+  width: 100%;
+}
+
+.placeholder-img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Contenedor del texto */
+.analyzer-content {
+  flex: 1 1 45%;
+  text-align: justify;
+}
+
+.analyzer-content h2 {
+  font-size: 2rem;
+  color: #06a4d5;
+  margin-bottom: 9rem;
+}
+
+.analyzer-content p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.try-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #06a4d5;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.try-link:hover {
+  border-bottom: 2px solid #06a4d5;
+}
+
+/* Sección de dudas */
+.contact-dudas {
+ text-align: center;
+ padding: 2rem 0;
+ margin-bottom: 12rem;
+}
+
+.contact-dudas h2 {
+  font-size: 2rem;
+  color: #06a4d5;
+  margin-bottom: 1rem;
+}
+
+.contact-dudas p {
+ margin-bottom: 4rem;
+}
+
+.contact-dudas .btn {
+ background-color: #06a4d5;
+ color: #fff;
+ padding: 10px 20px;
+ border-radius: 15px;
+ font-weight: 500;
+ cursor: pointer;
+ display: inline-block;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0px;
+  margin-bottom: 40px;
+}
+
+/* footer*/
+.footer-content > div {
+  border-top: 1px double #ddd;
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-links h3 {
+  font-size: 1.1rem;
+  margin: 20px 0 10px;
+  color: #000;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-logo {
+  margin-top: 26px;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer-brand {
+  text-align: right;
+  max-width: 250px;
+}
+
+.footer-brand p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+footer .copyright {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-brand {
+    text-align: center;
+  }
+
+  .footer-content > div {
+    padding-bottom: 20px;
+  }
+}
+
+.copyright span {
+ color: #00b4d8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+.hero h1 {
+font-size: 2rem;
+}
+
+.hero-sub {
+ font-size: 1rem;
+}
+
+.instrucciones-tabs {
+ flex-direction: column;
+ align-items: center;
+ }
+ .tab-button {
+  width: 100%;
+  max-width: 300px;
+ }
+
+ .steps {
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .benefit-grid {
+  grid-template-columns: 1fr;
+ }
+ }
+
+/* ==== ANALIZADOR ==== */
+
+/* Hero */
+.hero-analizador {
+    flex-wrap: wrap; /* Para que se adapte en pantallas pequeñas */
+    align-items: center;
+    padding: 2rem 70%;
+    gap: 2rem;
+    margin: 50px
+}
+
+.hero-analizador {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 40px;
+    margin-bottom: 1.5px;
+    color: #333;
+}
+
+.hero-analizador h1 {
+ font-size: 40px
+}
+
+.hero-analizador p {
+ font-size: 20px
+}
+
+input[type="text"] {
+  width: 40%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+input[type="text"]:focus {
+  border-color: #06a4d5;
+  box-shadow: 0 0 0 3px rgba(6, 164, 213, 0.2);
+  outline: none;
+}
+
+.btn-input {
+    background-color: #06A4D5;
+    color: #fff;
+    padding: 20px 20px;
+    border-radius: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.loading-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #f1f9f5;
+  border: 1px solid #06a4d5;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin: 50px
+  margin-top: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.results-wrapper {
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.result-box {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.result-box h4 {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.result-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.highlight-green {
+  color: #4caf50;
+}
+
+.highlight-yellow {
+  color: #f9b233;
+}
+
+.result-detail h3 {
+  margin-top: 1rem;
+  color: #06a4d5;
+}
+
+.diagnosis-text {
+  margin-top: 0.5rem;
+  background-color: #f1f8ff;
+  padding: 1rem;
+  border-left: 4px solid #06a4d5;
+  border-radius: 4px;
+}
+
+.step-two {
+  padding-top: 80px; /* separa del hero */
+  text-align: center;
+}
+
+.step-two h2 {
+  font-size: 2rem;
+  color: #06a4d5;
+  margin-bottom: 1rem;
+}
+
+.step-two p {
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.step-two a {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 15px;
+  font-weight: 500;
+  background-color: #06A4D5;
+  color: white;
+  border: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  margin-bottom: 8rem;
+}
+
+.step-two a:hover {
+  background-color: #048cb6;
+}
+
+/* ==== COMPRESOR ====> */
+/* HERO */
+
+.hero-compresor {
+    flex-wrap: wrap; /* Para que se adapte en pantallas pequeñas */
+    align-items: center;
+    padding: 2rem 0;
+    gap: 2rem;
+    margin: 50px
+}
+
+.hero-compresor {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 40px;
+    margin-bottom: 1.5px;
+    color: #333;
+}
+
+.hero-compresor h1 {
+ font-size: 40px
+}
+
+.hero-compresor p {
+ font-size: 20px
+}
+
+/* Call-to-Action (CTA) Styling */
+/* Drag-and-Drop Area */
+#drop-area {
+    border: 2px dashed #06A4D5;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+#drop-area p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #777;
+}
+
+#drop-area.highlight {
+    background: #e0ffe0;
+    border-color: #06A4D5;
+}
+
+#select-file {
+    background-color: #06A4D5;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Fix "Optimizar" Button Styling */
+#convert {
+    background-color: #06A4D5;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    max-width: 180px;
+    transition: background 0.3s ease;
+    margin: 0 auto;  /* ✅ Ensures it's always centered */}
+
+#convert:hover {
+    background-color: #067294;
+}
+
+/* Button Group for Optimizar & Descargar Todas */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-group button, .button-group a {
+    flex: 1;
+    text-align: center;
+    max-width: 180px;
+    padding: 10px 20px;
+}
+
+/* Fix "Download All" Button Overflow on Mobile */
+@media screen and (max-width: 600px) {
+    .button-group {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .button-group button, .button-group a {
+        max-width: 200px;  /* Prevents the "Download All" button from being too wide */
+        margin: 0 auto;  /* Centers buttons */
+    }
+}
+
+/* Results Container */
+#results-container {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Progress Box */
+.progress-item {
+
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px;
+}
+
+/* Center the Progress Bar in Desktop & Mobile */
+.progress-bar {
+    width: 90%;
+    height: 5px;
+    background: #e0e0e0;
+    border-radius: 3px;
+    margin: 5px auto;  /* ✅ Ensures centering on all screen sizes */    display: flex;
+    justify-content: center;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    background: #06A4D5;
+    width: 0%;
+    border-radius: 3px;
+    transition: width 0.3s;
+}
+
+/* File Info */
+.file-info {
+    flex: 1;
+    padding-right: 10px;
+}
+
+/* Adjustments for Download Button */
+.download-btn {
+    background: transparent;
+    color: #06A4D5;
+    border: 2px solid #06A4D5;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-align: center;
+    width: auto;
+    min-width: 120px;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+/* Fill button on hover & click */
+.download-btn:hover, .download-btn:active {
+    background: #06A4D5;
+    color: white;
+}
+
+section {
+    margin-bottom: 50px;  /* ✅ Increases spacing between sections */}
+/* General Section Spacing */
+section {
+    margin-bottom: 60px;  /* ✅ Increases spacing between sections */    padding: 40px 0;      /* ✅ Adds internal spacing for readability */}
+
+.cta-section {
+    text-align: center;
+    background-color: #e0f3e0;  /* ✅ Light green to match brand color */    padding: 50px 0;
+}
+
+.cta-section h2 {
+    color: #06A4D5;
+}
+
+.cta-section button {
+    background-color: #06A4D5;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-section button:hover {
+    background-color: #06A4D5;
+}
+
+/* ==== CONTACTO ==== */
+.contact-form {
+  min-height: 100vh;
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  color: #06a4d5;
+  margin-bottom: 1rem;
+}
+
+.contact-form p {
+ margin-bottom: 1rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box; /* importante para que padding y border no afecten el ancho */
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #fed338;
+  color: #000;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #f7c000;
+}
+

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /static/js/
+Disallow: /static/css/
+Allow: /static/img/
+Sitemap: https://boacompress.com/sitemap.xml

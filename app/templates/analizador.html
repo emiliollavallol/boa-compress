@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boa Compress | Analizador de Imágenes</title>
+    <meta name="description" content="¿Tu sitio está gordito? Usa nuestro analizador web y descubrelo. Mejora el SEO y la velocidad con nuestras herramientas gratuitas.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles-home.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="canonical" href="https://boacompress.com/analizar" />
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "Boa Compress",
+          "operatingSystem": "All",
+          "applicationCategory": "MultimediaApplication",
+          "description": "Boa Compress es una herramienta online gratuita para comprimir imágenes y optimizar sitios web.",
+          "url": "https://boacompress.com",
+          "image": "https://boacompress.com/static/boa-compress.webp",
+          "offers": {
+            "@type": "Offer",
+            "price": "0.00",
+            "priceCurrency": "USD"
+          }
+        }
+    </script>
+</head>
+<body>
+  <!-- ENCABEZADO -->
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <!-- Ajusta la ruta de tu logo -->
+         <a href="{{ url_for('home') }}">
+            <img src="{{ url_for('static', filename='boa-compress.webp') }}" alt="Boa Compress logo">
+         </a>
+      </div>
+
+          <!-- Botón hamburguesa (solo visible en mobile) -->
+      <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú">
+          ☰
+      </button>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="/analizar">Analizador</a></li>
+          <li><a href="/comprimir">Compresor</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <!-- Logo de Instagram -->
+          <div class="social-links">
+            <a href="https://instagram.com/boacompress" rel="nofollow" target="_blank">
+              <img src="{{ url_for('static', filename='instagram-icon.png') }}" alt="Instagram">
+            </a>
+          </div>
+        <!-- Botón al Blog -->
+          <div>
+            <a href="/blog" class="btn-blog">Blog</a>
+          </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+  <!-- Hero section -->
+  <section class="hero-analizador">
+    <div class="hero-analizador h1">
+        <h1>Analiza tu sitio web gratis en segundos</h1>
+        <p>Usa el analizador de Boa Compress para un diagnóstico inmediato del peso de tu sitio web.</p>
+            <form id="imageAnalysisForm" method="POST">
+                <input type="text" id="websiteUrl" name="websiteUrl" class="input" placeholder="Ingrese una URL" required>
+                <button type="submit" class="btn-input">Analizar</button>
+            </form>
+    </div>
+    <!-- Spinner oculto por defecto -->
+    <div id="loadingSpinner" style="display: none;">
+        <p>🔄 Analizando imágenes... Esto puede tardar unos segundos.</p>
+    </div>
+
+    <!-- Resultados -->
+    <div id="analysisResults"></div>
+
+    <!-- Loading -->
+    <div class="container">
+        <div id="loadingMessage" class="loading-box" style="display: none;">
+          <p class="loading-text">🐍 Analizando el sitio... Esto puede tardar unos segundos<span class="dots"></span></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById("imageAnalysisForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let formData = new FormData(this);
+
+            document.getElementById("loadingMessage").style.display = "block";
+            document.getElementById("analysisResults").innerHTML = "";
+
+            fetch("/analizar/", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("loadingMessage").style.display = "none";
+
+                document.getElementById("analysisResults").innerHTML = `
+                  <div class="results-wrapper">
+                    <div class="results-grid">
+                      <div class="result-box">
+                        <h4>🔍 Imágenes detectadas</h4>
+                        <p class="result-value">${data.total_images}</p>
+                      </div>
+                      <div class="result-box">
+                        <h4>Peso original</h4>
+                        <p class="result-value">${data.total_weight_before}MB</p>
+                      </div>
+                      <div class="result-box">
+                        <h4>Peso optimizado 🐍</h4>
+                        <p class="result-value highlight-green">${data.total_weight_after}MB</p>
+                      </div>
+                      <div class="result-box">
+                        <h4>Reducción esperada</h4>
+                        <p class="result-value highlight-yellow">${data.reduction_percentage}%</p>
+                      </div>
+                    </div>
+
+                    <div hidden>
+                      <h3>Promedio por imagen</h3>
+                      <p><strong>Antes:</strong> ${data.avg_weight_before}</p>
+                      <p><strong>Después:</strong> ${data.avg_weight_after}</p>
+                    </div>
+                    <div class="container">
+                        <div class="result-detail">
+                          <h3>📊 Diagnóstico</h3>
+                          <p class="diagnosis-text"><strong>${data.diagnosis}</strong></p>
+                        </div>
+                    </div>
+                  </div>
+                `;
+            })
+            .catch(error => {
+                document.getElementById("loadingMessage").style.display = "none";
+                document.getElementById("analysisResults").innerHTML = `<p style="color:red;">Error al analizar la URL.</p>`;
+                console.error("Error:", error);
+            });
+        });
+    </script>
+    </section>
+    <section class="step-two">
+        <h2>¿Ya analizaste tu sitio?</h2>
+        <p>¿El resultado no era el que esperabas? No te preocupes, puedes utilizar nuestro compresor gratuito para reducir el tamaño de tus imágenes y empezar a poner en forma tu sitio.<br>Ahorra espacio sin perder calidad.</p>
+        <a href="/comprimir" class="btn-blog">Prueba el compresor</a>
+    </section>
+
+    <section class="container" id="contacto">
+       <div class="container contact-dudas">
+          <h2>¿Necesitas ayuda personalizada?</h2>
+          <p>En Boa Compress no solo optimizamos imágenes, sino también resultados.<br>Formamos parte de una agencia especializada en performance, SEO, diseño y desarrollo web, preparada para transformar tu proyecto en un caso de éxito.<br>Puedes consultarnos y a la brevedad te contactará uno de nuestros profesionales para una atención personalizada.</p>
+          <a href="/contacto" class="btn">Contáctanos</a>
+       </div>
+    </section>
+
+    </main>
+
+  <footer>
+      <div class="container">
+        <div class="footer-content">
+
+          <!-- Columna 1: Navegación -->
+          <div class="footer-links">
+            <h3>Boa Compress</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/contacto">Contacto</a></li>
+              <li><a href="/blog">Blog</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 2: Herramientas -->
+          <div class="footer-links">
+            <h3>Herramientas</h3>
+            <ul>
+              <li><a href="/analizar">Analizador Web</a></li>
+              <li><a href="/comprimir">Compresor de Imágenes</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: Logo + slogan -->
+          <div class="footer-brand">
+            <img src="{{ url_for('static', filename='boa-compress.webp') }}" alt="Boa Compress logo" class="footer-logo">
+            <p>Tu privacidad es nuestro privilegio.<br>No vendemos ni compartimos tu información.</p>
+          </div>
+
+        </div>
+
+        <div class="copyright">
+          <p>© 2025 Boa Compress. Hecho con <span>💚</span><br>desde Buenos Aires, Argentina.</p>
+        </div>
+      </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger-btn');
+    const nav = document.getElementById('main-nav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

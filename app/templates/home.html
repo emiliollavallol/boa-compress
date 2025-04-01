@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boa Compress | Herramientas para optimizar tu e-commerce</title>
+    <meta name="description" content="¿Tu sitio está gordito? Usa Boa Compress para analizar el peso de tu web y comprimir imágenes fácilmente. Mejora el SEO y la velocidad con nuestras herramientas gratuitas.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles-home.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="canonical" href="https://boacompress.com/" />
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "Boa Compress",
+          "operatingSystem": "All",
+          "applicationCategory": "MultimediaApplication",
+          "description": "Boa Compress es una herramienta online gratuita para comprimir imágenes y optimizar sitios web.",
+          "url": "https://boacompress.com",
+          "image": "https://boacompress.com/static/boa-compress.webp",
+          "offers": {
+            "@type": "Offer",
+            "price": "0.00",
+            "priceCurrency": "USD"
+          }
+        }
+    </script>
+
+</head>
+
+<body>
+  <!-- ENCABEZADO -->
+<header>
+  <div class="container header-content">
+    <div class="logo">
+      <a href="{{ url_for('home') }}">
+        <img src="static/boa-compress.webp" alt="Boa Compress Logo">
+      </a>
+    </div>
+
+    <!-- Botón hamburguesa (solo visible en mobile) -->
+    <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú">
+      ☰
+    </button>
+
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="/analizar">Analizador</a></li>
+        <li><a href="/comprimir">Compresor</a></li>
+        <li><a href="/contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-right">
+      <div class="social-links">
+        <a href="https://instagram.com/boacompress" rel="nofollow" target="_blank">
+          <img src="static/instagram-icon.png" alt="Instagram">
+        </a>
+      </div>
+      <div>
+        <a href="/blog" class="btn-blog">Blog</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- Sección Hero -->
+    <section class="container hero">
+      <div class="hero-text">
+        <h1>¿Tu sitio está gordito?</h1>
+        <p>
+          Descubre cuánto pesa tu web.<br>
+          Comprime tus imágenes en segundos.<br>
+	      Mejora el SEO, la velocidad y la experiencia de tus usuarios.
+        </p>
+        <div class="hero-buttons">
+          <a href="/analizar" class="btn btn-primary">Analizar mi sitio</a>
+          <a href="/comprimir" class="btn btn-outline">Comprimir imágenes</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Ilustración de persona en caminadora -->
+        <img src="static/treadmill.png" alt="Ilustración de un sitio web personificado en una caminadora">
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="container como-funciona">
+            <h2>¿Cómo funciona?</h2>
+              <div class="gif-placeholder">
+                <img id="gif-analizador" src="static/analyzer.gif" alt="Instrucciones de cómo utilizar el analizador en formato GIF" class="gif-img visible">
+                <img id="gif-compresor" src="static/compresor.gif" alt="Instrucciones de cómo utilizar el compresor en formato GIF" class="gif-img">
+              </div>
+
+              <div class="tool-buttons">
+                <button class="tool-btn active" onclick="mostrarGif('analizador', this)">
+                  <i class="fas fa-search"></i> 🔍 Analizar
+                </button>
+                <button class="tool-btn" onclick="mostrarGif('compresor', this)">
+                  <i class="fas fa-compress-alt"></i> ⚡ Comprimir
+                </button>
+              </div>
+    </section>
+
+    <!-- Sección Por qué usar nuestro compresor -->
+    <section class="container por-que-usar" id="compresor">
+      <div class="left-column">
+        <h2>¿Por qué usar nuestro compresor?</h2>
+          <h4>⚡ Más velocidad</h4>
+	      <p>Reducí el tiempo de carga de tu sitio.</p>
+          <h4>📊 Mejor SEO</h4>
+	      <p>Google ama los sitios livianos.</p>
+          <h4>😎 Mejor experiencia</h4>
+	      <p>Usuarios felices, conversiones felices.</p>
+	      <h4>🌐 100% online</h4>
+          <p>No instalás nada, todo desde el navegador.</p>
+	      <h4>🤑 100% gratis</h4>
+          <p>Así como leíste</p>
+
+        <a href="/comprimir" class="try-link">Prueba el compresor →</a>
+      </div>
+      <div class="right-column">
+        <img src="static/weights.webp" alt="Un hombre levantando pesas" class="placeholder-img">
+      </div>
+    </section>
+
+        <!-- Analyzer Section -->
+    <section class="analyzer">
+      <div class="container">
+        <div class="analyzer-image">
+          <div class="image-placeholder">
+            <img src="static/search.webp" alt="El detective de Boa Compress analizando tu sitio" class="placeholder-img">
+          </div>
+        </div>
+        <!-- Contenedor único para el título, párrafos y enlace -->
+        <div class="analyzer-content">
+          <h2>¿Nuestro analizador? El mejor.</h2>
+          <p>En segundos, nuestro analizador web te dirá cuántas imágenes pesadas de peso tienes en tu sitio web.</p>
+          <p>Te generará un informe con un diagnóstico totalmente gratis.</p>
+          <a href="/analizar" class="try-link">
+            Prueba el analizador →<i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Sección de dudas + botón de contacto -->
+    <section class="container" id="contacto">
+       <div class="container contact-dudas">
+          <h2>Más que una herramienta</h2>
+          <p>En Boa Compress no solo optimizamos imágenes, sino también resultados.<br>Formamos parte de una agencia especializada en performance, SEO, diseño y desarrollo web, preparada para transformar tu proyecto en un caso de éxito.<br>Puedes consultarnos y a la brevedad te contactará uno de nuestros profesionales para una atención personalizada.</p>
+          <a href="/contacto" class="btn">Contáctanos</a>
+       </div>
+    </section>
+
+  </main>
+
+  <footer>
+      <div class="container">
+        <div class="footer-content">
+
+          <!-- Columna 1: Navegación -->
+          <div class="footer-links">
+            <h3>Boa Compress</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/contacto">Contacto</a></li>
+              <li><a href="/blog">Blog</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 2: Herramientas -->
+          <div class="footer-links">
+            <h3>Herramientas</h3>
+            <ul>
+              <li><a href="/analizar">Analizador Web</a></li>
+              <li><a href="/comprimir">Compresor de Imágenes</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: Logo + slogan -->
+          <div class="footer-brand">
+            <img src="static/boa-compress.webp" alt="Boa Compress Logo" class="footer-logo">
+            <p>Tu privacidad es nuestro privilegio.<br>No vendemos ni compartimos tu información.</p>
+          </div>
+
+        </div>
+
+        <div class="copyright">
+          <p>© 2025 Boa Compress. Hecho con <span>💚</span><br>desde Buenos Aires, Argentina.</p>
+        </div>
+      </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger-btn');
+    const nav = document.getElementById('main-nav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+  <script>
+    function mostrarGif(tipo, boton) {
+      const gifAnalizador = document.getElementById('gif-analizador');
+      const gifCompresor = document.getElementById('gif-compresor');
+
+      // Mostrar el gif correcto
+      if (tipo === 'analizador') {
+        gifAnalizador.classList.add('visible');
+        gifCompresor.classList.remove('visible');
+      } else {
+        gifAnalizador.classList.remove('visible');
+        gifCompresor.classList.add('visible');
+      }
+
+      // Cambiar el estilo del botón activo
+      document.querySelectorAll('.tool-btn').forEach(btn => btn.classList.remove('active'));
+      boton.classList.add('active');
+    }
+
+    // Mostramos por defecto el GIF del analizador
+    mostrarGif('analizador');
+  </script>
+
+
+</body>
+</html>

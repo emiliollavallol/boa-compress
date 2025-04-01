@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boa Compress | Contacto</title>
+    <meta name="description" content="¿Tu sitio está gordito? Contáctanos y te ayudaremos a ponerlo en forma.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles-home.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+
+<body>
+  <!-- ENCABEZADO -->
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <!-- Ajusta la ruta de tu logo -->
+         <a href="{{ url_for('home') }}">
+            <img src="{{ url_for('static', filename='boa-compress.webp') }}" alt="Boa Compress logo">
+         </a>
+      </div>
+
+          <!-- Botón hamburguesa (solo visible en mobile) -->
+      <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú">
+          ☰
+      </button>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="/analizar">Analizador</a></li>
+          <li><a href="/comprimir">Compresor</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <!-- Logo de Instagram -->
+          <div class="social-links">
+            <a href="https://instagram.com/boacompress" rel="nofollow" target="_blank">
+              <img src="{{ url_for('static', filename='instagram-icon.png') }}" alt="Instagram">
+            </a>
+          </div>
+        <!-- Botón al Blog -->
+          <div>
+            <a href="/blog" class="btn-blog">Blog</a>
+          </div>
+      </div>
+    </div>
+  </header>
+
+    <section class="contact-form">
+        <h2>Ocurrió un error al enviar el mensaje.</h2>
+        <p>Por favor, intentá de nuevo más tarde.</p>
+        <a href="/" class="btn-blog">Volver al inicio</a>
+    </section>
+
+  <footer>
+      <div class="container">
+        <div class="footer-content">
+
+          <!-- Columna 1: Navegación -->
+          <div class="footer-links">
+            <h3>Boa Compress</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/contacto">Contacto</a></li>
+              <li><a href="/blog">Blog</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 2: Herramientas -->
+          <div class="footer-links">
+            <h3>Herramientas</h3>
+            <ul>
+              <li><a href="/analizar">Analizador Web</a></li>
+              <li><a href="/comprimir">Compresor de Imágenes</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: Logo + slogan -->
+          <div class="footer-brand">
+            <img src="{{ url_for('static', filename='boa-compress.webp') }}" alt="Boa Compress logo" class="footer-logo">
+            <p>Tu privacidad es nuestro privilegio.<br>No vendemos ni compartimos tu información.</p>
+          </div>
+
+        </div>
+
+        <div class="copyright">
+          <p>© 2025 Boa Compress. Hecho con <span>💚</span><br>desde Buenos Aires, Argentina.</p>
+        </div>
+      </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger-btn');
+    const nav = document.getElementById('main-nav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+
+</body>

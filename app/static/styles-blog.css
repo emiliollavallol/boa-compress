@@ -1,0 +1,144 @@
+/* Reseteo y box-sizing */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: Roboto, sans-serif;
+background-color: #fff;
+color: #333;
+line-height: 1.5;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Contenedor principal para limitar el ancho */
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 1rem;
+}
+
+/* Blog Index*/
+
+.blog-index {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.blog-index h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #06a4d5;
+}
+
+.blog-index a {
+  color: #06a4d5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.blog-index a:hover {
+  text-decoration: underline;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.post-preview {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
+}
+
+.post-preview:hover {
+  transform: scale(1.02);
+}
+
+.post-preview h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.post-preview p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.post-preview a {
+  color: #06a4d5;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.post-preview a:hover {
+  text-decoration: underline;
+}
+
+/* Blog Post*/
+
+.blog-post {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  line-height: 1.8;
+  color: #333;
+  font-size: 1.05rem;
+}
+
+.blog-post h1 {
+  font-size: 2.2rem;
+  color: #06a4d5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.blog-post p {
+  margin-bottom: 1.5rem;
+}
+
+.blog-post a {
+  color: #06a4d5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
+}
+
+.blog-post img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
