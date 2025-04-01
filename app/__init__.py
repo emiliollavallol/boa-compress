@@ -3,11 +3,12 @@ from app.compressor import compressor_bp
 from app.analyzer import analyzer_bp
 from app.contacto import contacto_bp
 from app.blog import blog_bp
+import os
 
 def create_app():
     app = Flask(__name__)
 
-    app.config['SECRET_KEY'] = 'your_secret_key_here'
+    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'fallback_key')
 
     # Registrar los Blueprints
     app.register_blueprint(compressor_bp, url_prefix='/comprimir')
