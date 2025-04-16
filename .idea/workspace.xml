@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9892acfe-17f2-4591-a13a-5f5c44efaf44" name="Changes" comment="v2.0 commit 1">
-      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+    <list default="true" id="9892acfe-17f2-4591-a13a-5f5c44efaf44" name="Changes" comment="v2.0 commit 2">
+      <change afterPath="$PROJECT_DIR$/app/blog/templates/blog_post_guia-definitiva-sobre-formatos-de-imagenes-para-tu-web.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/blog/templates/blog_post_guia-practica-para-mejorar-tu-catalogo-online.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/blog/beneficios-svg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/blog/beneficios-webp.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/blog/comparativa.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/blog/optimized-catalogo-optimizado.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/blog/optimized-comparacion.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/blog/optimized-trescientos-sesenta.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/analyzer/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/analyzer/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/templates/blog_post_seo-para-ecommerce.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/templates/blog_post_seo-para-ecommerce.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +50,6 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2smjXhCLEtMr9lpRZJYsDVg3Lt9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,6 +62,7 @@
     "Python.convopt.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/milo/Documents/Nuevos Negocios/minisaas/convopt/convopt",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
@@ -62,17 +73,17 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/static/blog" />
       <recent name="$PROJECT_DIR$/v1" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/.venv" />
-      <recent name="$PROJECT_DIR$/.venv/backend/static" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-6a3326d57233-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.24807.21" />
+        <option value="bundled-python-sdk-348a24fa61fa-5312c7369657-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.23774.444" />
       </set>
     </attachedChunks>
   </component>
@@ -237,8 +248,19 @@
       <option name="project" value="LOCAL" />
       <updated>1743511516656</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="v2.0 commit 2">
+      <option name="closed" value="true" />
+      <created>1743512059237</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1743512059237</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -277,6 +299,7 @@
     <MESSAGE value="v2.0 commit" />
     <MESSAGE value="v2.1 commit" />
     <MESSAGE value="v2.0 commit 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2.0 commit 1" />
+    <MESSAGE value="v2.0 commit 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2.0 commit 2" />
   </component>
 </project>

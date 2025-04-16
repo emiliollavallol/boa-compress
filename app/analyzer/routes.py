@@ -122,7 +122,7 @@ def index():
     if request.method == "POST":
         url = request.form.get("websiteUrl")
         url = normalize_url(url)
-        images = crawl_site(url, max_pages=10)
+        images = crawl_site(url, max_pages=2)
 
         formats = {"jpg": 0, "png": 0, "webp": 0, "other": 0, "unknown": 0}  # Aseguramos que 'other' exista
         total_weight_before = 0

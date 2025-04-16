@@ -5,6 +5,20 @@ from . import blog_bp
 def blog_index():
     posts = [
         {
+            "title": "La guía definitiva sobre formatos de imágenes para tu web: JPEG, PNG, GIF, SVG, WebP y cuándo usar cada uno",
+            "slug": "guia-definitiva-sobre-formatos-de-imagenes-para-tu-web",
+            "excerpt": "Las imágenes son fundamentales para cualquier página web: enriquecen el contenido, mejoran la experiencia del usuario y ayudan al SEO. Sin embargo, elegir el formato adecuado puede marcar la diferencia en rendimiento, calidad visual y velocidad. ",
+            "date": "2025-04-16",
+            "author": "Emilio Llavallol"
+        },
+        {
+            "title": "Guía práctica para mejorar tu catálogo online con imágenes optimizadas",
+            "slug": "guia-practica-para-mejorar-tu-catalogo-online",
+            "excerpt": "El catálogo online es la vidriera de tu ecommerce. Imágenes atractivas y optimizadas son fundamentales para captar la atención de tus visitantes y aumentar la conversión.",
+            "date": "2025-04-16",
+            "author": "Emilio Llavallol"
+        },
+        {
             "title": "¿Qué es WebP y por qué debería importarte en 2025?",
             "slug": "que-es-webp",
             "excerpt": "Descubre cómo una buena compresión puede mejorar la velocidad, SEO y experiencia de usuario.",
