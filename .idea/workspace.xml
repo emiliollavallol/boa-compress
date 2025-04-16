@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9892acfe-17f2-4591-a13a-5f5c44efaf44" name="Changes" comment="v2.0 commit 2">
-      <change afterPath="$PROJECT_DIR$/app/blog/templates/blog_post_guia-definitiva-sobre-formatos-de-imagenes-para-tu-web.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/templates/blog_post_guia-practica-para-mejorar-tu-catalogo-online.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/blog/beneficios-svg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/blog/beneficios-webp.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/blog/comparativa.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/blog/optimized-catalogo-optimizado.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/blog/optimized-comparacion.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/blog/optimized-trescientos-sesenta.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/analyzer/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/analyzer/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/templates/blog_post_seo-para-ecommerce.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/templates/blog_post_seo-para-ecommerce.html" afterDir="false" />
-    </list>
+    <list default="true" id="9892acfe-17f2-4591-a13a-5f5c44efaf44" name="Changes" comment="v2.0 commit nuevos posts de blog y leves modificaciones" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -256,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743512059237</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="v2.0 commit nuevos posts de blog y leves modificaciones">
+      <option name="closed" value="true" />
+      <created>1744816796274</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1744816796274</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -300,6 +295,7 @@
     <MESSAGE value="v2.1 commit" />
     <MESSAGE value="v2.0 commit 1" />
     <MESSAGE value="v2.0 commit 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2.0 commit 2" />
+    <MESSAGE value="v2.0 commit nuevos posts de blog y leves modificaciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2.0 commit nuevos posts de blog y leves modificaciones" />
   </component>
 </project>
