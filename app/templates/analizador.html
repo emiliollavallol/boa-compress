@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boa Compress | Analizador de Imágenes</title>
-    <meta name="description" content="¿Tu sitio está gordito? Usa nuestro analizador web y descubrelo. Mejora el SEO y la velocidad con nuestras herramientas gratuitas.">
+    <title>Analizar Imágenes Ecommerce | Optimizar Velocidad Web - Boa Compress</title>
+    <meta name="description" content="Detecta imágenes pesadas en tu ecommerce. Analiza y optimiza la velocidad de tu tienda online en segundos con Boa Compress. ¡Mejorá tu rendimiento hoy!">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles-home.css') }}">
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <link rel="canonical" href="https://boacompress.com/analizar" />
@@ -70,8 +70,8 @@
   <!-- Hero section -->
   <section class="hero-analizador">
     <div class="hero-analizador h1">
-        <h1>Analiza tu sitio web gratis en segundos</h1>
-        <p>Usa el analizador de Boa Compress para un diagnóstico inmediato del peso de tu sitio web.</p>
+        <h1>Analiza y optimiza las imágenes visibles de tu sitio web.</h1>
+        <p>Detecta en segundos qué imágenes están frenando la velocidad de tu ecommerce o sitio web. Optimiza tu performance sin perder calidad visual.</p>
             <form id="imageAnalysisForm" method="POST">
                 <input type="text" id="websiteUrl" name="websiteUrl" class="input" placeholder="Ingrese una URL" required>
                 <button type="submit" class="btn-input">Analizar</button>
@@ -150,18 +150,109 @@
         });
     </script>
     </section>
-    <section class="step-two">
-        <h2>¿Ya analizaste tu sitio?</h2>
-        <p>¿El resultado no era el que esperabas? No te preocupes, puedes utilizar nuestro compresor gratuito para reducir el tamaño de tus imágenes y empezar a poner en forma tu sitio.<br>Ahorra espacio sin perder calidad.</p>
-        <a href="/comprimir" class="btn-blog">Prueba el compresor</a>
+    <!-- Sección de público objetivo -->
+    <section class="target-audience-section">
+        <!-- Encabezado de la sección -->
+        <div class="section-header">
+            <h2>Pensada para quienes necesitan velocidad, resultados y ventas.</h2>
+            <p>Boa Compress analiza el impacto real de las imágenes en tu sitio y está diseñada para ayudarte a detectar oportunidades de mejora concretas.</p>
+            <p>Ideal para quienes gestionan sitios web donde cada segundo de carga y cada imagen optimizada cuentan.</p>
+        </div>
+
+        <!-- Tarjetas de público objetivo -->
+        <div class="audience-cards">
+            <!-- Tarjeta 1: E-commerce -->
+            <div class="audience-card">
+                <div class="card-icon-container">
+                    <img src="{{ url_for('static', filename='shopping-bag.svg') }}" alt="Tiendas online y e-commerce">
+                </div>
+                <h3 class="card-title">Tiendas online y e-commerce</h3>
+                <p class="card-description">Detecta imágenes pesadas que pueden estar afectando tu conversión.</p>
+            </div>
+
+            <!-- Tarjeta 2: Agencias SEO -->
+            <div class="audience-card">
+                <div class="card-icon-container">
+                     <img src="{{ url_for('static', filename='briefcase-business.svg') }}" alt="Agencias y consultores SEO">
+                </div>
+                <h3 class="card-title">Agencias y consultores SEO</h3>
+                <p class="card-description">Complementa tus auditorías técnicas con datos visuales rápidos y específicos.</p>
+            </div>
+
+            <!-- Tarjeta 3: Desarrolladores -->
+            <div class="audience-card">
+                <div class="card-icon-container">
+                     <img src="{{ url_for('static', filename='code.svg') }}" alt="Desarrolladores y diseñadores web">
+                </div>
+                <h3 class="card-title">Desarrolladores y diseñadores web</h3>
+                <p class="card-description">Evalúa el peso de imágenes visibles sin entrar al backend del sitio.</p>
+            </div>
+        </div>
+
+        <!-- Caja CTA de interlinking -->
+        <div class="interlink-cta">
+            <p>¿Querés aprender cómo mejorar visualmente tu catálogo online?</p>
+            <a href="/blog/guia-practica-para-mejorar-tu-catalogo-online" target="_blank">Guía práctica para mejorar tu catálogo online con imágenes optimizadas ➔</a>
+        </div>
+    </section>
+    <!-- Sección promocional de la extensión de Chrome -->
+    <section class="extension-promo">
+        <div class="extension-content">
+            <!-- Icono de Chrome -->
+            <div class="chrome-icon-container">
+                <img src="{{ url_for('static', filename='chrome.svg') }}" alt="Google Chrome Extension">
+            </div>
+
+            <!-- Título y descripción -->
+            <h2 class="extension-title">¿Querés analizar una página web sin copiar y pegar la URL?</h2>
+            <p class="extension-text">Con nuestra extensión gratuita para Google Chrome podés analizar cualquier página en vivo, directamente desde tu navegador.</p>
+            <p class="extension-text">Ideal para quienes trabajan con múltiples sitios o quieren auditar su propia web en segundos.</p>
+
+            <!-- Botón CTA -->
+            <a href="https://chromewebstore.google.com/detail/aionjahhieghebakmlnbhfknghanhgdd" class="cta-button" target="_blank" rel="noopener noreferrer nofollow">
+                Instalar extensión ➔
+            </a>
+
+            <!-- Imagen de muestra de la extensión (opcional) -->
+            <div class="extension-preview">
+                <!-- Aquí puedes incluir una imagen de muestra de la extensión -->
+                <img src="{{ url_for('static', filename='screenshot-boacompress.webp') }}" alt="Vista previa de la extensión BoaCompress para Chrome" style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+    </section>
+    <section class="interlinking-block">
+    <!-- Bloque de interlinking para conectar con la página de compresión -->
+        <div>
+            <h3 class="interlinking-title">¿Listo para optimizar las imágenes que detectaste?</h3>
+            <p class="interlinking-text">
+                Usá nuestro compresor de imágenes para reducir el tamaño de tus archivos WebP sin perder calidad visual.<br>
+                Ideal para acelerar tu sitio y mejorar la experiencia de usuario en segundos.
+            </p>
+            <a href="/comprimir" class="cta-button">
+                Comprimir imágenes ➔
+            </a>
+        </div>
     </section>
 
-    <section class="container" id="contacto">
-       <div class="container contact-dudas">
-          <h2>¿Necesitas ayuda personalizada?</h2>
-          <p>En Boa Compress no solo optimizamos imágenes, sino también resultados.<br>Formamos parte de una agencia especializada en performance, SEO, diseño y desarrollo web, preparada para transformar tu proyecto en un caso de éxito.<br>Puedes consultarnos y a la brevedad te contactará uno de nuestros profesionales para una atención personalizada.</p>
-          <a href="/contacto" class="btn">Contáctanos</a>
-       </div>
+    <!-- Sección de ayuda personalizada -->
+    <section class="help-section">
+        <div class="help-container">
+            <!-- Título principal -->
+            <h2 class="help-title">¿Necesitas ayuda personalizada para optimizar tu sitio?</h2>
+
+            <!-- Párrafos de texto -->
+            <p class="help-text">En Boa Compress no solo optimizamos imágenes, optimizamos resultados.</p>
+
+            <p class="help-text">Formamos parte de una agencia especializada en performance web, SEO, diseño y desarrollo, preparada para acompañarte en la mejora integral de tu sitio.</p>
+
+            <p class="help-text">¿Tienes dudas específicas o buscas asesoramiento personalizado?<br>
+            Escríbenos y uno de nuestros especialistas se pondrá en contacto contigo a la brevedad.</p>
+
+            <!-- Contenedor del botón CTA -->
+            <div class="button-container">
+                <a href="/contacto" class="cta-button">Contactar un especialista ➔</a>
+            </div>
+        </div>
     </section>
 
     </main>

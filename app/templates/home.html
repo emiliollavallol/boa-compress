@@ -79,15 +79,11 @@
     <!-- Sección Hero -->
     <section class="container hero">
       <div class="hero-text">
-        <h1>¿Tu sitio está gordito?</h1>
-        <p>
-          Descubre cuánto pesa tu web.<br>
-          Comprime tus imágenes en segundos.<br>
-	      Mejora el SEO, la velocidad y la experiencia de tus usuarios.
-        </p>
+        <h1>Optimiza la velocidad y el rendimiento de tu sitio web en segundos.</h1>
+        <p>Boa Compress te ayuda a analizar y comprimir imágenes visibles para acelerar tu sitio, mejorar tu posicionamiento SEO y ofrecer una mejor experiencia a tus usuarios.</p>
         <div class="hero-buttons">
-          <a href="/analizar" class="btn btn-primary">Analizar mi sitio</a>
-          <a href="/comprimir" class="btn btn-outline">Comprimir imágenes</a>
+          <a href="/analizar" class="btn btn-primary">Analizar mi sitio ➔</a>
+          <a href="/comprimir" class="btn btn-outline">Comprimir imágenes ➔</a>
         </div>
       </div>
       <div class="hero-image">
@@ -113,61 +109,161 @@
                 </button>
               </div>
     </section>
-
-    <!-- Sección Por qué usar nuestro compresor -->
-    <section class="container por-que-usar" id="compresor">
-      <div class="left-column">
-        <h2>¿Por qué usar nuestro compresor?</h2>
-          <h4>⚡ Más velocidad</h4>
-	      <p>Reducí el tiempo de carga de tu sitio.</p>
-          <h4>📊 Mejor SEO</h4>
-	      <p>Google ama los sitios livianos.</p>
-          <h4>😎 Mejor experiencia</h4>
-	      <p>Usuarios felices, conversiones felices.</p>
-	      <h4>🌐 100% online</h4>
-          <p>No instalás nada, todo desde el navegador.</p>
-	      <h4>🤑 100% gratis</h4>
-          <p>Así como leíste</p>
-
-        <a href="/comprimir" class="try-link">Prueba el compresor →</a>
-      </div>
-      <div class="right-column">
-        <img src="static/weights.webp" alt="Un hombre levantando pesas" class="placeholder-img">
-      </div>
-    </section>
-
-        <!-- Analyzer Section -->
-    <section class="analyzer">
-      <div class="container">
-        <div class="analyzer-image">
-          <div class="image-placeholder">
-            <img src="static/search.webp" alt="El detective de Boa Compress analizando tu sitio" class="placeholder-img">
-          </div>
+    <!-- Sección de beneficios -->
+    <section class="benefits-section">
+        <!-- Encabezado de la sección -->
+        <div class="section-header">
+            <h2>¿Por qué optimizar las imágenes de tu sitio?</h2>
         </div>
-        <!-- Contenedor único para el título, párrafos y enlace -->
-        <div class="analyzer-content">
-          <h2>¿Nuestro analizador? El mejor.</h2>
-          <p>En segundos, nuestro analizador web te dirá cuántas imágenes pesadas de peso tienes en tu sitio web.</p>
-          <p>Te generará un informe con un diagnóstico totalmente gratis.</p>
-          <a href="/analizar" class="try-link">
-            Prueba el analizador →<i class="fas fa-arrow-right"></i>
-          </a>
+
+        <!-- Grid de beneficios -->
+        <div class="benefits-grid">
+            <!-- Beneficio 1: SEO -->
+            <div class="benefit-card">
+                <div class="icon-container">
+                    <img src="{{ url_for('static', filename='trending-up.svg') }}" alt="Aumentá tu velocidad">
+                </div>
+                <div class="benefit-content">
+                    <h3 class="benefit-title">Aumentá tu velocidad de carga y tu posicionamiento SEO.</h3>
+                </div>
+            </div>
+
+            <!-- Beneficio 2: Conversión -->
+            <div class="benefit-card">
+                <div class="icon-container">
+                    <img src="{{ url_for('static', filename='shopping-cart.svg') }}" alt="Mejorá la tasa de conversión">
+                </div>
+                <div class="benefit-content">
+                    <h3 class="benefit-title">Mejorá la tasa de conversión de tu tienda online.</h3>
+                </div>
+            </div>
+
+            <!-- Beneficio 3: Experiencia -->
+            <div class="benefit-card">
+                <div class="icon-container">
+                    <img src="{{ url_for('static', filename='smile.svg') }}" alt="Ofrece una experiencia de navegación más feliz para el usuario">
+                </div>
+                <div class="benefit-content">
+                    <h3 class="benefit-title">Ofrecé una experiencia de navegación más ágil y agradable.</h3>
+                </div>
+            </div>
+
+            <!-- Beneficio 4: Detección -->
+            <div class="benefit-card">
+                <div class="icon-container">
+                    <img src="{{ url_for('static', filename='search.svg') }}" alt="Detecta oportunidades">
+                </div>
+                <div class="benefit-content">
+                    <h3 class="benefit-title">Detectá oportunidades ocultas que impactan en el rendimiento.</h3>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+     <section class="tools-section">
+        <!-- Encabezado de la sección -->
+        <div class="section-header">
+            <h2>Dos herramientas diseñadas para potenciar tu sitio web</h2>
+            <p>En Boa Compress creamos soluciones simples y eficaces para mejorar el rendimiento de tu sitio:</p>
+        </div>
+
+        <!-- Contenedor de las tarjetas de herramientas -->
+        <div class="tools-container">
+            <!-- Herramienta 1: Analizar imágenes -->
+            <div class="tool-card">
+                <div class="icon-container">
+                    <img src="{{ url_for('static', filename='search.svg') }}" alt="Detecta tus imágenes pesadas">
+                </div>
+                <h3 class="tool-title">Analizar imágenes visibles</h3>
+                <p class="tool-description">Detectá todas las imágenes que están frenando la velocidad de tu sitio y descubrí cuánto podrías optimizar.</p>
+                <a href="/analizar" class="cta-button">Analizar imágenes ➔</a>
+            </div>
+
+            <!-- Herramienta 2: Comprimir imágenes -->
+            <div class="tool-card">
+                <div class="icon-container">
+                    <img src="{{ url_for('static', filename='zap.svg') }}" alt="Reduce el tamaño de tus archivos">
+                </div>
+                <h3 class="tool-title">Comprimir imágenes WebP</h3>
+                <p class="tool-description">Reducí el tamaño de tus archivos WebP sin perder calidad visual y acelerá la carga de tus páginas.</p>
+                <a href="/comprimir" class="cta-button">Comprimir imágenes ➔</a>
+            </div>
+        </div>
+    </section>
+    <!-- Sección Sobre Nosotros -->
+    <section class="about-section">
+        <div class="about-content fade-in">
+            <h2 class="about-title">¿Quiénes estamos detrás de Boa Compress?</h2>
+            <p class="about-text">Boa Compress es parte de un equipo especializado en optimización web, SEO técnico y performance digital.</p>
+            <p class="about-text">Desarrollamos herramientas simples y potentes para que cualquier sitio web, tienda online o proyecto digital pueda mejorar su velocidad, su experiencia de usuario y su posicionamiento en buscadores.</p>
+            <p class="about-text">Pero en Boa Compress no solo optimizamos imágenes, también optimizamos resultados.</p>
+            <p class="about-text">Formamos parte de una agencia enfocada en performance, SEO, diseño y desarrollo web, preparada para acompañarte en la mejora integral de tu sitio.</p>
+            <h4 class="about-text">¿Querés llevar tu proyecto al siguiente nivel?</h4>
+            <p class="about-text">Podés consultarnos y uno de nuestros profesionales te contactará a la brevedad con atención personalizada.</p>
+
+            <!-- Contenedor del botón (para mantenerlo centrado en móvil) -->
+            <div class="button-container">
+                <a href="/contacto" class="contact-button">Contactate con nosotros ➔</a>
+            </div>
+        </div>
     </section>
 
+    <!-- Sección de Blog -->
+    <section class="blog-section">
+        <!-- Encabezado de la sección -->
+        <div class="section-header">
+            <h2>Aprendé más sobre optimización web en nuestro blog</h2>
+            <p>Conocé nuestras guías prácticas y consejos expertos para optimizar imágenes, mejorar la velocidad de tu sitio y potenciar tus resultados online.</p>
+        </div>
 
-    <!-- Sección de dudas + botón de contacto -->
-    <section class="container" id="contacto">
-       <div class="container contact-dudas">
-          <h2>Más que una herramienta</h2>
-          <p>En Boa Compress no solo optimizamos imágenes, sino también resultados.<br>Formamos parte de una agencia especializada en performance, SEO, diseño y desarrollo web, preparada para transformar tu proyecto en un caso de éxito.<br>Puedes consultarnos y a la brevedad te contactará uno de nuestros profesionales para una atención personalizada.</p>
-          <a href="/contacto" class="btn">Contáctanos</a>
-       </div>
+        <!-- Artículos destacados -->
+        <div class="blog-posts">
+            <!-- Artículo 1 -->
+            <div class="blog-card">
+                <div class="post-icon">
+                    <img src="{{ url_for('static', filename='image.svg') }}" alt="Imagen">
+                </div>
+                <h3 class="post-title">La guía definitiva sobre formatos de imágenes para tu web</h3>
+                <a href="/blog/guia-definitiva-sobre-formatos-de-imagenes-para-tu-web" class="post-link">
+                    Leer artículo ➔
+                </a>
+            </div>
+
+            <!-- Artículo 2 -->
+            <div class="blog-card">
+                <div class="post-icon">
+                    <img src="{{ url_for('static', filename='file-type-2.svg') }}" alt="Qué es WebP">
+                </div>
+                <h3 class="post-title">¿Qué es WebP y por qué debería importarte en 2025?</h3>
+                <a href="/blog/que-es-webp" class="post-link">
+                    Leer artículo ➔
+                </a>
+            </div>
+        </div>
+
+        <!-- Botón para ver todos los artículos -->
+        <div class="view-all-container">
+            <a href="/blog" class="view-all-button">
+                Ver todos los artículos ➔
+            </a>
+        </div>
     </section>
 
+     <!-- Sección final de CTA -->
+    <section class="final-cta-section">
+        <div class="cta-container">
+            <!-- Título y texto de apoyo -->
+            <h2 class="cta-title">¿Listo para optimizar el rendimiento de tu sitio web?</h2>
+            <p class="cta-text">Analizá y optimizá tus imágenes visibles ahora mismo con Boa Compress.<br>
+            Acelerá tu sitio, mejorá tu SEO y potenciá tus conversiones en minutos.</p>
+
+            <!-- Botones de CTA -->
+            <div class="cta-buttons">
+                <a href="/analizar" class="cta-button primary-button">Analizar imágenes ➔</a>
+                <a href="/comprimir" class="cta-button secondary-button">Comprimir imágenes ➔</a>
+            </div>
+        </div>
+    </section>
   </main>
-
   <footer>
       <div class="container">
         <div class="footer-content">

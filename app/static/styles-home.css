@@ -263,6 +263,673 @@ background-color: transparent;
   color: white;
 }
 
+/* Contenedor principal */
+.benefits-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+/* Encabezado de la sección */
+.section-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.section-header h2 {
+    font-size: 2.25rem;
+    color: #05A3D5;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+/* Contenedor de las tarjetas de beneficios */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+/* Estilos de las tarjetas individuales */
+.benefit-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border-color: rgba(5, 163, 213, 0.2);
+}
+
+/* Contenedor del icono */
+.icon-container {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(5, 163, 213, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.25rem;
+    flex-shrink: 0;
+}
+
+.icon-container i {
+    color: #05A3D5;
+    width: 24px;
+    height: 24px;
+}
+
+/* Contenido del texto */
+.benefit-content {
+    flex: 1;
+}
+
+/* Título del beneficio */
+.benefit-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+/* Estilos responsive */
+@media (max-width: 900px) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .benefits-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.75rem;
+    }
+
+    .benefit-card {
+        padding: 1.5rem;
+    }
+}
+
+
+/* Contenedor principal */
+.tools-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+/* Encabezado de la sección */
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2.25rem;
+    color: #05A3D5;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contenedor de las tarjetas */
+.tools-container {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+/* Estilos de las tarjetas individuales */
+.tool-card {
+    flex: 1;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor del icono */
+.icon-container {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(5, 163, 213, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.icon-container i {
+    color: #05A3D5;
+    width: 32px;
+    height: 32px;
+}
+
+/* Título de la tarjeta */
+.tool-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+/* Descripción de la tarjeta */
+.tool-description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+    flex-grow: 1; /* Hace que la descripción ocupe el espacio disponible */
+}
+
+/* Botón CTA */
+.cta-button {
+    display: inline-block;
+    background-color: #05A3D5;
+    color: white;
+    padding: 0.9rem 2rem;
+    border-radius: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.05rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(5, 163, 213, 0.2);
+}
+
+.cta-button:hover {
+    background-color: #0487af;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(5, 163, 213, 0.3);
+}
+
+/* Estilos responsive */
+@media (max-width: 900px) {
+    .tools-container {
+        flex-direction: column;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .tool-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .tools-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.75rem;
+    }
+
+    .tool-title {
+        font-size: 1.35rem;
+    }
+
+    .tool-description {
+        font-size: 1rem;
+    }
+}
+
+/* Contenedor principal */
+.about-section {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Elemento decorativo sutil */
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(5, 163, 213, 0.05);
+    border-radius: 50%;
+    transform: translate(30%, -30%);
+}
+
+/* Contenido de la sección */
+.about-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+/* Título de la sección */
+.about-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #05A3D5;
+    margin-bottom: 1.75rem;
+    line-height: 1.2;
+}
+
+/* Párrafos de texto */
+.about-text {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-text:last-of-type {
+    margin-bottom: 2rem; /* Espacio adicional antes del botón */
+}
+
+/* Botón de contacto */
+.contact-button {
+    display: inline-block;
+    background-color: #05A3D5;
+    color: white;
+    padding: 0.85rem 2rem;
+    border-radius: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.05rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 4px 8px rgba(5, 163, 213, 0.2);
+}
+
+.contact-button:hover {
+    background-color: #0487af;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(5, 163, 213, 0.3);
+}
+
+/* Animación de fade-in al hacer scroll */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 3rem 1.5rem;
+        margin: 3rem 1rem;
+    }
+
+    .about-title {
+        font-size: 1.9rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    /* El botón permanece centrado incluso cuando el texto está alineado a la izquierda en móvil */
+    .button-container {
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+
+/* Contenedor principal */
+.blog-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 3.5rem 2rem;
+    background-color: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+}
+
+/* Encabezado de la sección */
+.section-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.section-header h2 {
+    font-size: 2.25rem;
+    color: #05A3D5;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contenedor de artículos */
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+/* Tarjeta de artículo */
+.blog-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border-color: rgba(5, 163, 213, 0.2);
+}
+
+/* Icono del artículo */
+.post-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(5, 163, 213, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+}
+
+.post-icon i {
+    color: #05A3D5;
+    width: 24px;
+    height: 24px;
+}
+
+/* Título del artículo */
+.post-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+    flex-grow: 1; /* Hace que el título ocupe el espacio disponible */
+}
+
+/* Enlace del artículo */
+.post-link {
+    display: inline-block;
+    color: #05A3D5;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+    position: relative;
+    padding-right: 28px; /* Espacio para la flecha */
+}
+
+.post-link:hover {
+    color: #0487af;
+}
+
+/* Icono de flecha */
+.post-link i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.post-link:hover i {
+    transform: translate(3px, -50%);
+}
+
+/* Botón "Ver todos los artículos" */
+.view-all-container {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.view-all-button {
+    display: inline-block;
+    background-color: transparent;
+    color: #05A3D5;
+    padding: 0.75rem 1.75rem;
+    border-radius: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    border: 1px solid #05A3D5;
+}
+
+.view-all-button:hover {
+    background-color: rgba(5, 163, 213, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Estilos responsive */
+@media (max-width: 900px) {
+    .blog-posts {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .blog-section {
+        padding: 2.5rem 1.5rem;
+        margin: 3rem 1rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.75rem;
+    }
+
+    .section-header p {
+        font-size: 1rem;
+    }
+
+    .post-title {
+        font-size: 1.15rem;
+    }
+}
+
+/* Contenedor principal */
+.final-cta-section {
+    background-color: #f9f9f9;
+    padding: 5rem 2rem;
+    margin-top: 4rem;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #eaeaea;
+}
+
+/* Elementos decorativos de fondo */
+.final-cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(5, 163, 213, 0.05);
+    border-radius: 50%;
+    transform: translate(30%, -30%);
+    z-index: 0;
+}
+
+.final-cta-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(5, 163, 213, 0.05);
+    border-radius: 50%;
+    transform: translate(-30%, 30%);
+    z-index: 0;
+}
+
+/* Contenedor interno centrado */
+.cta-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Título de la sección */
+.cta-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+/* Texto de apoyo */
+.cta-text {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contenedor de botones */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Estilos de los botones */
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    min-width: 220px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón primario (Analizar) */
+.primary-button {
+    background-color: #05A3D5;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #0487af;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(5, 163, 213, 0.3);
+}
+
+/* Botón secundario (Comprimir) */
+.secondary-button {
+    background-color: white;
+    color: #05A3D5;
+    border: 2px solid #05A3D5;
+}
+
+.secondary-button:hover {
+    background-color: rgba(5, 163, 213, 0.05);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .final-cta-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .cta-title {
+        font-size: 2rem;
+    }
+
+    .cta-text {
+        font-size: 1.1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
 /* Sección ¿Por qué usar nuestro compresor? */
 .por-que-usar {
  display: flex;
@@ -691,6 +1358,362 @@ input[type="text"]:focus {
   background-color: #048cb6;
 }
 
+/* Contenedor principal */
+.target-audience-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+/* Encabezado de la sección */
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2.25rem;
+    color: #05A3D5;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 0.5rem;
+}
+
+/* Contenedor de las tarjetas */
+.audience-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* Estilos de las tarjetas individuales */
+.audience-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 2.5rem 2rem;
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.audience-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(5, 163, 213, 0.1);
+    border-color: rgba(5, 163, 213, 0.2);
+}
+
+/* Contenedor del icono */
+.card-icon-container {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(5, 163, 213, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.audience-card:hover .card-icon-container {
+    background-color: rgba(5, 163, 213, 0.2);
+}
+
+/* Icono de la tarjeta */
+.card-icon {
+    color: #05A3D5;
+    width: 32px;
+    height: 32px;
+}
+
+/* Título de la tarjeta */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.75rem;
+    transition: color 0.3s ease;
+}
+
+.audience-card:hover .card-title {
+    color: #05A3D5;
+}
+
+/* Descripción de la tarjeta */
+.card-description {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Caja CTA de interlinking */
+.interlink-cta {
+    margin-top: 3.5rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.interlink-cta p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+.interlink-cta a {
+    color: #05A3D5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.interlink-cta a:hover {
+    color: #0487af;
+    text-decoration: underline;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .section-header h2 {
+        font-size: 1.9rem;
+    }
+
+    .audience-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .audience-card {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+/* Contenedor principal */
+.extension-promo {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 3.5rem 2rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decoración de fondo sutil */
+.extension-promo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(5, 163, 213, 0.05);
+    border-radius: 50%;
+    transform: translate(30%, -30%);
+    z-index: 0;
+}
+
+.extension-promo::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(5, 163, 213, 0.05);
+    border-radius: 50%;
+    transform: translate(-30%, 30%);
+    z-index: 0;
+}
+
+/* Contenido de la sección */
+.extension-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Icono de Chrome */
+.chrome-icon-container {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.chrome-icon {
+    color: #05A3D5;
+    width: 40px;
+    height: 40px;
+}
+
+/* Título de la sección */
+.extension-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+/* Párrafos de texto */
+.extension-text {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 0.75rem;
+}
+
+.extension-text:last-of-type {
+    margin-bottom: 2rem;
+}
+
+/* Botón CTA */
+.cta-button {
+    display: inline-block;
+    background-color: #05A3D5;
+    color: white;
+    padding: 0.9rem 2rem;
+    border-radius: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 8px rgba(5, 163, 213, 0.25);
+}
+
+.cta-button:hover {
+    background-color: #0487af;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(5, 163, 213, 0.35);
+}
+
+/* Imagen de muestra de la extensión */
+.extension-preview {
+    max-width: 300px;
+    margin: 2.5rem auto 0;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eaeaea;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .extension-promo {
+        padding: 2.5rem 1.5rem;
+        margin: 3rem 1rem;
+    }
+
+    .extension-title {
+        font-size: 1.75rem;
+    }
+
+    .extension-text {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.8rem;
+        font-size: 1rem;
+    }
+}
+
+/* Contenedor principal del bloque de interlinking */
+.interlinking-block {
+    max-width: 800px;
+    margin: 3rem auto 4rem;
+    padding: 2.5rem;
+    text-align: center;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    transition: box-shadow 0.3s ease;
+}
+
+.interlinking-block:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+/* Título del bloque */
+.interlinking-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.25rem;
+    line-height: 1.3;
+}
+
+/* Texto descriptivo */
+.interlinking-text {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.75rem;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botón CTA */
+.cta-button {
+    display: inline-block;
+    background-color: #05A3D5;
+    color: white;
+    padding: 0.85rem 2rem;
+    border-radius: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.05rem;
+    box-shadow: 0 4px 8px rgba(5, 163, 213, 0.2);
+}
+
+.cta-button:hover {
+    background-color: #0487af;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(5, 163, 213, 0.3);
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .interlinking-block {
+        margin: 2.5rem 1rem 3.5rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .interlinking-title {
+        font-size: 1.5rem;
+    }
+
+    .interlinking-text {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.75rem 1.75rem;
+        font-size: 1rem;
+    }
+}
+
 /* ==== COMPRESOR ====> */
 /* HERO */
 
@@ -908,6 +1931,493 @@ section {
 
 .cta-section button:hover {
     background-color: #06A4D5;
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container styles */
+.benefits-section {
+    font-family: 'Roboto', sans-serif;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section heading */
+.benefits-heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.benefits-heading h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #05A3D5; /* Match your brand blue */
+}
+
+.benefits-heading p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #666;
+}
+
+/* Benefits grid */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* Benefit card */
+.benefit-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon container */
+.icon-container {
+    background-color: rgba(5, 163, 213, 0.1); /* Light blue background */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.icon-container i {
+    color: #05A3D5; /* Match your brand blue */
+    font-size: 2rem;
+}
+
+/* Benefit content */
+.benefit-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #333;
+}
+
+.benefit-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-heading h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Contenedor principal */
+.how-it-works {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+/* Encabezado de la sección */
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: #05A3D5;
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #666;
+}
+
+/* Contenedor del timeline */
+.timeline-container {
+    position: relative;
+    padding: 2rem 0;
+}
+
+/* Línea horizontal que conecta los pasos */
+.timeline-line {
+    position: absolute;
+    top: 120px; /* Ajustar según la altura de los iconos y números */
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #e0e0e0;
+    z-index: 1;
+}
+
+/* Contenedor de los pasos */
+.timeline-steps {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilo para cada paso individual */
+.timeline-step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Contenedor del icono */
+.step-icon {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(5, 163, 213, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.step-icon i {
+    font-size: 2rem;
+    color: #05A3D5;
+}
+
+/* Círculo con número del paso */
+.step-number {
+    width: 40px;
+    height: 40px;
+    background-color: #05A3D5;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(5, 163, 213, 0.2);
+}
+
+/* Título del paso */
+.step-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* Descripción del paso */
+.step-description {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .timeline-steps {
+        flex-direction: column;
+    }
+
+    .timeline-step {
+        margin-bottom: 3rem;
+        max-width: 100%;
+    }
+
+    .timeline-line {
+        top: 0;
+        left: 50%;
+        width: 3px;
+        height: 100%;
+        transform: translateX(-50%);
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    /* Ajuste para el último paso en móvil */
+    .timeline-step:last-child {
+        margin-bottom: 0;
+    }
+}
+.section-hyperlink {
+  text-align: center;
+  margin: 2rem auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  color: #333333; /* Color del texto general */
+}
+
+.section-hyperlink a {
+  color: #05A3D5;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.section-hyperlink p {
+  margin: 0;
+}
+
+.hipervinculo {
+  color: #05A3D5;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Contenedor principal */
+.webp-info-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    background-color: #ffffff;
+}
+
+/* Contenedor de la sección de dos columnas */
+.webp-info-container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+/* Columna de contenido educativo (izquierda) */
+.webp-info-content {
+    flex: 1.5;
+}
+
+.webp-info-content h2 {
+    font-size: 2.25rem;
+    color: #05A3D5;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.webp-info-content p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.25rem;
+}
+
+.webp-info-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Columna de tarjeta CTA (derecha) */
+.webp-info-cta {
+    flex: 1;
+}
+
+/* Estilos de la tarjeta CTA */
+.cta-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Icono de la tarjeta */
+.cta-icon {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(5, 163, 213, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.cta-icon i {
+    font-size: 2rem;
+    color: #05A3D5;
+}
+
+/* Título de la tarjeta */
+.cta-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Descripción de la tarjeta */
+.cta-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Botón CTA */
+.cta-button {
+    display: inline-block;
+    background-color: #05A3D5;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #0487af;
+}
+
+/* Estilos responsive */
+@media (max-width: 900px) {
+    .webp-info-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .webp-info-content h2 {
+        font-size: 2rem;
+    }
+
+    .cta-card {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .webp-info-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .webp-info-content h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Contenedor principal de la sección */
+.help-section {
+    background-color: #f9f9f9;
+    padding: 5rem 1.5rem;
+    width: 100%;
+}
+
+/* Contenedor interno centrado */
+.help-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilos del título */
+.help-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #05A3D5;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+/* Estilos de los párrafos */
+.help-text {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.25rem;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Espacio adicional antes del último párrafo */
+.help-text:nth-child(3) {
+    margin-top: 1rem;
+}
+
+/* Contenedor del botón para centrado y espaciado */
+.button-container {
+    margin-top: 2.5rem;
+}
+
+/* Estilos del botón CTA */
+.cta-button {
+    display: inline-block;
+    background-color: #05A3D5;
+    color: white;
+    padding: 0.9rem 2rem;
+    border-radius: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    min-width: 250px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(5, 163, 213, 0.2);
+}
+
+.cta-button:hover {
+    background-color: #0487af;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(5, 163, 213, 0.3);
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .help-section {
+        padding: 4rem 1.25rem;
+    }
+
+    .help-title {
+        font-size: 1.9rem;
+    }
+
+    .help-text {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        min-width: 220px;
+        padding: 0.8rem 1.8rem;
+    }
 }
 
 /* ==== CONTACTO ==== */

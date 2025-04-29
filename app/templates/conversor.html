@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BoaCompress | Conversor y compresor gratuito de imágenes a WebP</title>
-    <meta name="description" content="Convierte y comprime gratis tus imágenes JPEG, PNG, HEIC y más a WebP. Reduce el tamaño sin perder calidad y mejora la velocidad de tu sitio web.">
+    <meta name="description" content="Comprime imágenes WebP online gratis, rápido y seguro. Reduce el tamaño de tus archivos sin perder calidad. ¡Usa nuestro compresor de WebP ilimitado!">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles-home.css') }}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
@@ -55,7 +55,7 @@
         <!-- Logo de Instagram -->
           <div class="social-links">
             <a href="https://instagram.com/boacompress" rel="nofollow" target="_blank">
-              <img src="{{ url_for('static', filename='instagram-icon.png') }}" alt="Instagram">
+                  <img src="{{ url_for('static', filename='instagram-icon.png') }}" alt="Instagram">
             </a>
           </div>
         <!-- Botón al Blog -->
@@ -70,8 +70,8 @@
 
     <section>
         <div class="hero-compresor">
-            <h1>Optimiza imágenes gratis en segundos</h1>
-            <p>Convierte y comprime imágenes de manera inteligente sin perder calidad. Usa BoaCompress para reducir el peso de tus archivos y mejorar la velocidad de tu sitio web, garantizando una experiencia rápida y optimizada.</p>
+            <h1>Comprimir Imágenes WebP | Online, Gratis y Eficiente</h1>
+            <p>¿Buscas comprimir archivos WebP de manera rápida, segura y gratuita?<br>En Boa Compress te ofrecemos el mejor compresor de imágenes WebP online para reducir el tamaño de tus archivos sin perder calidad visual.<br>Optimiza tus imágenes en segundos y mejora la velocidad de tu sitio web.</p>
         </div>
 
         <div id="drop-area">
@@ -91,18 +91,158 @@
     </section>
 
     <script src="{{ url_for('static', filename='script.js') }}" defer></script>
-    <section class="step-two">
-        <h2>¿No sabes para qué sirve el compresor?</h2>
-        <p>Usa nuestro analizador para detectar automáticamente si tienes imágenes que están ralentizando tu sitio web. Te dará un diagnóstico gratis y rápido.</p>
-        <a href="/analizar" class="btn-blog">Prueba el analizador</a>
-    </section>
 
-    <section class="container" id="contacto">
-       <div class="container contact-dudas">
-          <h2>¿Necesitas ayuda personalizada?</h2>
-          <p>En Boa Compress no solo optimizamos imágenes, sino también resultados.<br>Formamos parte de una agencia especializada en performance, SEO, diseño y desarrollo web, preparada para transformar tu proyecto en un caso de éxito.<br>Puedes consultarnos y a la brevedad te contactará uno de nuestros profesionales para una atención personalizada.</p>
-          <a href="/contacto" class="btn">Contáctanos</a>
-       </div>
+     <section class="benefits-section">
+        <div class="benefits-heading">
+            <h2>¿Por qué elegir nuestro compresor WebP?</h2>
+            <p>Optimiza tus imágenes de forma rápida y sencilla con nuestra herramienta especializada</p>
+        </div>
+
+        <div class="benefits-grid">
+            <!-- Benefit 1 -->
+            <div class="benefit-card">
+                <div class="icon-container">
+                    <img src="{{ url_for('static', filename='infinity.svg') }}" alt="Compresión ilimitada">
+                </div>
+                <h3 class="benefit-title">Compresión ilimitada</h3>
+                <p class="benefit-description">Sin límite de cantidad de imágenes WebP.</p>
+            </div>
+
+            <!-- Benefit 2 -->
+            <div class="benefit-card">
+                <div class="icon-container">
+                    <img src="{{ url_for('static', filename='zap.svg') }}" alt="Rápido y seguro">
+                </div>
+                <h3 class="benefit-title">Rápido y seguro</h3>
+                <p class="benefit-description">Compresión automática en segundos.</p>
+            </div>
+
+            <!-- Benefit 3 -->
+            <div class="benefit-card">
+                <div class="icon-container">
+                     <img src="{{ url_for('static', filename='lock.svg') }}" alt="Calidad garantizada">
+                </div>
+                <h3 class="benefit-title">Calidad garantizada</h3>
+                <p class="benefit-description">Optimización sin pérdida de calidad.</p>
+            </div>
+
+            <!-- Benefit 4 -->
+            <div class="benefit-card">
+                <div class="icon-container">
+                    <img src="{{ url_for('static', filename='monitor.svg') }}" alt="Compatible con dispositivos">
+                </div>
+                <h3 class="benefit-title">Compatible con cualquier dispositivo</h3>
+                <p class="benefit-description">Windows, Mac, Linux, iOS, Android.</p>
+            </div>
+
+            <!-- Benefit 5 -->
+            <div class="benefit-card">
+                <div class="icon-container">
+                    <img src="{{ url_for('static', filename='globe.svg') }}" alt="Fácil de usar">
+                </div>
+                <h3 class="benefit-title">Fácil de usar</h3>
+                <p class="benefit-description">Funciona desde cualquier navegador, sin instalación necesaria.</p>
+            </div>
+        </div>
+    </section>
+    <section class="how-it-works">
+        <!-- Encabezado de la sección -->
+        <div class="section-header">
+            <h2>¿Cómo comprimir imágenes WebP fácilmente?</h2>
+            <p>Optimizar tus imágenes WebP con Boa Compress es rápido, sencillo y seguro. Sigue estos tres pasos:</p>
+        </div>
+
+        <!-- Contenedor del timeline -->
+        <div class="timeline-container">
+            <!-- Línea horizontal que conecta los pasos -->
+            <div class="timeline-line"></div>
+
+            <!-- Pasos del timeline -->
+            <div class="timeline-steps">
+                <!-- Paso 1 -->
+                <div class="timeline-step">
+                    <div class="step-icon">
+                        <img src="{{ url_for('static', filename='cloud-upload.svg') }}" alt="Sube tu imagen">
+                    </div>
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Sube tu imagen</h3>
+                    <p class="step-description">Selecciona o arrastra tu archivo de imagen de cualquier tipo (JPG, PNG, TIFF, HEIC, etc.) en nuestra plataforma online.</p>
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="timeline-step">
+                    <div class="step-icon">
+                        <img src="{{ url_for('static', filename='zap.svg') }}" alt="Procesamos tu imagen">
+                    </div>
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Procesamos tu imagen</h3>
+                    <p class="step-description">Nuestro compresor optimizará automáticamente el tamaño de tu archivo.</p>
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="timeline-step">
+                    <div class="step-icon">
+                        <img src="{{ url_for('static', filename='download.svg') }}" alt="Descarga tu archivo optimizado">
+                    </div>
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Descarga tu archivo optimizado</h3>
+                    <p class="step-description">Guarda tu nueva imagen WebP comprimida en segundos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section-hyperlink">
+          <p>
+            ¿No sabes la diferencia entre los tipos de archivo de imágenes?
+            <a href="/blog/guia-definitiva-sobre-formatos-de-imagenes-para-tu-web" target="_blank">Revisa nuestra guía definitiva sobre formatos de imágenes</a>
+          </p>
+        </div>
+    </section>
+    <!-- Sección de información sobre WebP -->
+    <section class="webp-info-section">
+        <div class="webp-info-container">
+            <!-- Contenido educativo (izquierda) -->
+            <div class="webp-info-content">
+                <h2>¿Qué es el formato WebP y por qué deberías optimizarlo?</h2>
+                <p>WebP es un formato de imagen moderno desarrollado por Google, diseñado para ofrecer compresión de alta eficiencia sin comprometer la calidad visual.</p>
+                <p>Gracias a su capacidad para reducir el tamaño de archivo, las imágenes WebP permiten que los sitios web carguen más rápido, consuman menos datos y ofrezcan una mejor experiencia a los usuarios.</p>
+                <p>Sin embargo, incluso los archivos WebP pueden ser pesados si no están optimizados correctamente. Utilizar un compresor específico para imágenes WebP es esencial para maximizar la velocidad de carga de tu sitio y mejorar tu posicionamiento en buscadores.</p>
+                <p>¿Quieres saber más sobre el formato WebP y por qué es tan relevante en estos tiempos?
+                    <a href="/blog/que-es-webp" class="hipervinculo" target="_blank">Revisa nuestro artículo que habla sobre la relevancia del WebP en 2025.</a>
+                </p>
+            </div>
+
+            <!-- Tarjeta CTA (derecha) -->
+            <div class="webp-info-cta">
+                <div class="cta-card">
+                    <div class="cta-icon">
+                        <img src="{{ url_for('static', filename='scan-search.svg') }}" alt="Analiza tus imagenes WebP">
+                    </div>
+                    <h3 class="cta-title">¿Cuántas imágenes podrías optimizar?</h3>
+                    <p class="cta-description">Descubre en segundos cuántas imágenes podrías mejorar en tu sitio web.</p>
+                    <a href="/analizar" class="cta-button">Analizar mi sitio ➔</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sección de ayuda personalizada -->
+    <section class="help-section">
+        <div class="help-container">
+            <!-- Título principal -->
+            <h2 class="help-title">¿Necesitas ayuda personalizada para optimizar tu sitio?</h2>
+
+            <!-- Párrafos de texto -->
+            <p class="help-text">En Boa Compress no solo optimizamos imágenes, optimizamos resultados.</p>
+
+            <p class="help-text">Formamos parte de una agencia especializada en performance web, SEO, diseño y desarrollo, preparada para acompañarte en la mejora integral de tu sitio.</p>
+
+            <p class="help-text">¿Tienes dudas específicas o buscas asesoramiento personalizado?<br>
+            Escríbenos y uno de nuestros especialistas se pondrá en contacto contigo a la brevedad.</p>
+
+            <!-- Contenedor del botón CTA -->
+            <div class="button-container">
+                <a href="/contacto" class="cta-button">Contactar un especialista ➔</a>
+            </div>
+        </div>
     </section>
  </main>
 
