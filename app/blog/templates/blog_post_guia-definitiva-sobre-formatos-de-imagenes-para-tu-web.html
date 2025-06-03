@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía definitiva sobre formatos de imágenes: JPEG, PNG, GIF, SVG, WebP | Boa Compress</title>
-    <meta name="description" content="Descubre cuál es el formato ideal para cada tipo de imagen en tu web. Aprende cuándo usar JPEG, PNG, GIF, SVG o WebP para optimizar SEO y rendimiento.">
+    <title>Formatos de imágenes para web: cuál elegir entre JPG, PNG, GIF, SVG y WebP | Boa Compress</title>
+    <meta name="description" content="Conocé los formatos ideales para tu web: JPG, PNG, GIF, SVG y WebP. Elegí el mejor para mejorar velocidad, SEO y experiencia visual.">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles-blog.css') }}">
     <link rel="canonical" href="{{ request.url }}" />
 </head>
@@ -13,9 +13,59 @@
     <article class="blog-post">
       <h1>La guía definitiva sobre formatos de imágenes para tu web: JPEG, PNG, GIF, SVG, WebP y cuándo usar cada uno</h1>
       <p>Fecha publicada: 16/04/2025</p>
+      <p>Última actualización: 03/06/2025</p>
       <p>Autor: Emilio Llavallol</p>
-      <img src="{{ url_for('static', filename='blog/comparativa.webp') }}" alt="Comparación de los distintos formatos de imágenes">
       <p>Las imágenes son fundamentales para cualquier página web: enriquecen el contenido, mejoran la experiencia del usuario y ayudan al SEO. Elegir el formato adecuado puede marcar la diferencia en rendimiento, calidad visual y velocidad. Aquí te explicamos cada formato y cuándo utilizarlo.</p>
+
+      <h2>Comparativa rápida de formatos de imagen</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Formato</th>
+            <th>Ideal para</th>
+            <th>Peso</th>
+            <th>Transparencia</th>
+            <th>Animación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>JPEG</td>
+            <td>Fotografías</td>
+            <td>Bajo</td>
+            <td>No</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>PNG</td>
+            <td>Gráficos, logos</td>
+            <td>Medio</td>
+            <td>Sí</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>GIF</td>
+            <td>Animaciones simples</td>
+            <td>Alto</td>
+            <td>Sí</td>
+            <td>Sí</td>
+          </tr>
+          <tr>
+            <td>SVG</td>
+            <td>Vectores escalables</td>
+            <td>Bajo</td>
+            <td>Sí</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>WebP</td>
+            <td>Optimización general</td>
+            <td>Muy bajo</td>
+            <td>Sí</td>
+            <td>Sí</td>
+          </tr>
+        </tbody>
+      </table>
 
       <h2>¿Por qué es importante elegir bien el formato de imagen?</h2>
       <ul>
@@ -52,6 +102,34 @@
 
       <h2>Conclusión y recomendación</h2>
       <p>Usa formatos optimizados como WebP siempre que puedas. Herramientas como <a href="https://boacompress.com">Boa Compress</a> pueden ayudarte a optimizar automáticamente tus imágenes.</p>
+
+      <h2>Preguntas frecuentes sobre formatos de imagen</h2>
+
+      <details>
+        <summary>¿Cuál es el mejor formato de imagen para una web rápida?</summary>
+        <p>WebP ofrece la mejor compresión con buena calidad visual, ideal para sitios rápidos.</p>
+      </details>
+
+      <details>
+        <summary>¿Qué formato usar para logos con fondo transparente?</summary>
+        <p>SVG es la mejor opción si el logo es vectorial. PNG si es una imagen rasterizada.</p>
+      </details>
+
+      <details>
+        <summary>¿Qué diferencia hay entre JPG y PNG?</summary>
+        <p>JPG comprime más y es ideal para fotos. PNG permite transparencia y mejor calidad para gráficos.</p>
+      </details>
+
+      <details>
+        <summary>¿Se puede usar GIF en 2025?</summary>
+        <p>Sí, pero WebP animado es más eficiente. Usá GIF solo si necesitás compatibilidad máxima.</p>
+      </details>
+
+      <div class="cta-box">
+        <h2>¿Querés optimizar tus imágenes ahora?</h2>
+        <p>Subí tus imágenes en segundos y reducí su peso sin perder calidad con <strong><a href="https://www.boacompress.com/comprimir">Boa Compress</a></strong>.</p>
+        <a href="https://www.boacompress.com/comprimir" class="btn-call">Probar herramienta gratis</a>
+      </div>
       <a href="/blog">← Volver al blog</a>
     </article>
 </body>

@@ -5,25 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9892acfe-17f2-4591-a13a-5f5c44efaf44" name="Changes" comment="v2.0 commit sitemap y robots">
-      <change afterPath="$PROJECT_DIR$/app/static/briefcase-business.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/chrome.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/cloud-upload.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/code.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/download.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/file-type-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/image.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/scan-search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/screenshot-boacompress.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/shopping-bag.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/shopping-cart.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/smile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/trending-up.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/styles-home.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/styles-home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/analizador.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/analizador.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/conversor.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/conversor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/templates/blog_post_guia-definitiva-sobre-formatos-de-imagenes-para-tu-web.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/templates/blog_post_guia-definitiva-sobre-formatos-de-imagenes-para-tu-web.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/blog/beneficios-svg.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/blog/beneficios-webp.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/styles-blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/styles-blog.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +72,35 @@
       <recent name="$PROJECT_DIR$/v1" />
       <recent name="$PROJECT_DIR$" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="convopt" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -279,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744834151768</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="v2.0 commit sitemap y robots">
+      <option name="closed" value="true" />
+      <created>1745951359592</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1745951359592</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="UnknownFeatures">
